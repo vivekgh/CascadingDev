@@ -34,7 +34,7 @@ public class CascadingTest {
         AppProps.setApplicationJarClass(properties, CascadingTest.class);
         FlowConnector flowConnector = new LocalFlowConnector();
                    
-        // create the source tap
+        //create the source tap
         Scheme sourceScheme = new TextLine( new Fields( "line" ) );
         Tap inTap = new FileTap( sourceScheme, "C:\\Barclays Project\\Data\\Job requirements.txt" );
 
